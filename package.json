@@ -1,0 +1,32 @@
+{
+  "name": "random-fake-useragent",
+  "version": "0.0.1",
+  "description": "Random useragent base on browser statistics from a real world database",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "request": "^2.70.0",
+    "xml2js": "^0.4.16"  
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koppthe/random-fake-useragent.git"
+  },
+  "keywords": [
+    "random",
+    "useragent"
+  ],
+  "author": "koppt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koppthe/random-fake-useragent/issues"
+  },
+  "homepage": "https://github.com/koppthe/random-fake-useragent"
+}
