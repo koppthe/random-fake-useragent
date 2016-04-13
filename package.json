@@ -6,11 +6,11 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "cheerio": "^0.20.0",
     "request": "^2.70.0",
-    "xml2js": "^0.4.16"  
+    "xml2js": "^0.4.16"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
