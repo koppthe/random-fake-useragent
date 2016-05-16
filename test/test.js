@@ -1,43 +1,22 @@
-'use strict';
+var expect = require('chai').expect
+var lib = require('../index.js')
 
-var fs = require('fs')
-var request = require('request')
-var xml2js = require('xml2js')
+var iterations = 200
+var browsersType = ['Chrome', 'Internet Explorer', 'Firefox', 'Safari', 'Opera', 'valid', '']
 
-var xmlUrl = 'http://techpatterns.com/downloads/firefox/useragentswitcher.xml'
-var file = __dirname + '/useragent-data.json'
-
-var useragents = []
-var xmlParser = new xml2js.Parser()
-
-request(xmlUrl, function(err, res, body) {
-	xmlParser.parseString(body, function(err, result) {
-		parseFolder('', result.useragentswitcher.folder)
-		fs.writeFile(file, JSON.stringify(useragents, null, '\t'), function() {
-			console.log('Done Writing File.')
-		})
+describe('random-fake-useragent', function() {
+	it('Can return value', function() {
+		expect(lib.getRandom()).to.be.a.string
+	})
+	it('Randomization specify browser', function() {
+		for (var i = 0; i < browsersType.length; i++) {
+			expect(lib.getRandom(browsersType[i])).to.be.a.string
+		}
+	})
+	it('Randomization works', function(done) {
+		for (var i = 0; i < iterations; i++) {
+			expect(lib.getRandom()).to.be.a.string
+		}
+		done()
 	})
 })
-
-function parseFolder(folderName, folder) {
-	folder.forEach(function(folderItem) {
-		var subFolderName = folderName + '/' + folderItem.$.description
-
-		if (folderItem.hasOwnProperty('folder')) {
-			parseFolder(subFolderName, folderItem.folder)
-		}
-
-		parseUseragents(subFolderName, folderItem)
-	})
-}
-
-function parseUseragents(folderName, folderItem) {
-	if (folderItem.hasOwnProperty('useragent')) {
-		folderItem.useragent.forEach(function(useragent) {
-			useragent = useragent.$
-			if (typeof useragent.useragent === 'string' && useragent.useragent.length > 0) {
-				useragents.push(useragent.useragent)
-			}
-		})
-	}
-}
