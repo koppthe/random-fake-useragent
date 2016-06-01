@@ -6,17 +6,18 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "async": "^2.0.0-rc.4",
-    "chai": "^3.5.0",
     "cheerio": "^0.20.0",
+    "request": "^2.70.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^2.0.0",
     "gulp-istanbul": "^0.10.4",
     "gulp-mocha": "^2.2.0",
     "isparta": "^4.0.0",
-    "request": "^2.70.0",
     "xml2js": "^0.4.16"
   },
   "scripts": {
