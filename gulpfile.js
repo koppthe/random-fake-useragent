@@ -25,7 +25,6 @@ gulp.task('test', function() {
 			instrumenter: isparta.Instrumenter,
 			includeUntested: true	
 		}))
-		// Force hookRequire to return covered files
 		.pipe(istanbul.hookRequire())
 		.on('finish', function() {
 			gulp.src(files.test, {read: false})
