@@ -1,6 +1,6 @@
 {
   "name": "random-fake-useragent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Random useragent base on browser statistics from a real world database",
   "main": "index.js",
   "directories": {
