@@ -1,5 +1,11 @@
 # random-fake-useragent
 
+[![npm version](https://badge.fury.io/js/random-fake-useragent.svg)](https://badge.fury.io/js/random-fake-useragent)
+[![Dependency Status](https://david-dm.org/koppthe/random-fake-useragent.svg)](https://david-dm.org/koppthe/random-fake-useragent)
+[![devDependency Status](https://david-dm.org/koppthe/random-fake-useragent/dev-status.svg)](https://david-dm.org/koppthe/random-fake-useragent#info=devDependencies)
+
+[![NPM](https://nodei.co/npm/random-fake-useragent.png)](https://npmjs.org/package/random-fake-useragent)
+
 Random Fake User-Agent. It picks up `User-Agent` strings based on `w3schools` Browser Statistics from a `real world database`.
 
 ## Features
