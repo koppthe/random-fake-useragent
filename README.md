@@ -3,6 +3,7 @@
 [![npm version](https://badge.fury.io/js/random-fake-useragent.svg)](https://badge.fury.io/js/random-fake-useragent)
 [![Dependency Status](https://david-dm.org/koppthe/random-fake-useragent.svg)](https://david-dm.org/koppthe/random-fake-useragent)
 [![devDependency Status](https://david-dm.org/koppthe/random-fake-useragent/dev-status.svg)](https://david-dm.org/koppthe/random-fake-useragent#info=devDependencies)
+[![Coverage Status](https://coveralls.io/repos/koppthe/random-fake-useragent/badge.svg?branch=master&service=github)](https://coveralls.io/github/koppthe/random-fake-useragent?branch=master)
 
 [![NPM](https://nodei.co/npm/random-fake-useragent.png)](https://npmjs.org/package/random-fake-useragent)
 
